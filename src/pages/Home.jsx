@@ -74,40 +74,40 @@ const MyCarousel = () => {
     <Carousel
       autoPlay
       infiniteLoop
-      interval={1000}
+      interval={5000}
       showStatus={false}
       showArrows={false}
       showThumbs={false}
     >
       {/*  */}
-      <Box w={'full'} h={'100vh'}>
+      <Box w={'full'} h={['50%', '100vh']}>
         <Image src={img1} />
         <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
           Watch the Future
         </Heading>
       </Box>
       {/*  */}
-      <Box w={'full'} h={'100vh'}>
+      <Box w={'full'} h={['50%', '100vh']}>
         <Image src={img2} />
         <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
           Future is Gaming
         </Heading>
       </Box>
       {/*  */}
-      <Box w={'full'} h={'100vh'}>
+      <Box w={'full'} h={['50%', '100vh']}>
         <Image src={img3} />
         <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
           Gaming on Console
         </Heading>
       </Box>
-
       {/*  */}
-      <Box w={'full'} h={'100vh'}>
+      <Box w={'full'} h={['50%', '100vh']}>
         <Image src={img4} />
         <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
           Night Life is Cool
         </Heading>
       </Box>
+      {/*  */}
     </Carousel>
   );
 };

@@ -12,6 +12,7 @@ import Videos from './pages/Videos';
 import Upload from './pages/Upload';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Notfound from './pages/Notfound';
 
 //! App component
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
         <Route path="/upload" element={<Upload />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="*" element={<h1>Not Found</h1>} />
+        <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />
     </Router>
